@@ -1,0 +1,188 @@
+Part 2, codepan link_Jie Zhang
+https://codepen.io/jie-chelchel/pen/abJEmOB?editors=1100
+
+
+
+    1. What is Semantic HTML? 
+    Semantic elements use elements with meaning, like form, table..
+
+    2. What is HTML used for? 
+    To give the structure and content for the web.
+
+    3. What is an attribute and where do we put it? 
+    Attribute provide additional information about elements Like src to img.
+
+
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    h1 defines the most important heading. You only use it once.
+
+    5. Name two tags that have required attributes
+     <img> requires src. <form> requires action.
+
+    6. What do we put in the head of our HTML document? 
+      Title, style, meta, link, script, and base.
+
+    7. What is an id? 
+      id is an attribute that is used to specify a unique elements
+    
+    8. What elements can I add an id to? 
+        Any one you want 
+    9. How many times can I use the same id on a page? 
+       just once 
+
+    10. What is a class? 
+    class is the attribute to specify a class for a HTML element. 
+
+
+    11. What elements can I add a class to? 
+       Any.
+
+    12. How many times can I use the same class on a page? 
+       As many as you want. 
+
+    13. How do I get my link to open in a new tab?
+       Use target="_blank"
+
+
+    14. What is the alt attribute in the image tag used for? 
+        describe the image. 
+
+    15. How do I reference an id?
+         #idName 
+    16. What is the difference between a section and a div
+        Section is more specific than a div element. It is applied to 
+        a section of content that can be grouped gether in a semantically 
+        meaningful way. div has no special meaning. 
+
+
+    17. What is CSS used for? 
+        To make your web look beautiful. 
+
+    18. How to we select an element? Example - every h2 on the page
+          h2 {
+
+          }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+          The id selector is used for selecting a single HTML element with 
+          a unique id attribute value. It can only be used once. A class can 
+          be used for a single group of element. For example, in a ul, if you want to 
+          make one of the li inside that ul to be special, give an id to it. 
+          If you have many <p> in your html, you may give them the same class. 
+
+
+    20. How do we select classes in CSS?
+        .className
+
+    21. How do we select a p element with a single class of “human””?
+        .human p
+
+    22. What is a parent child selector? When would this be useful? 
+      parent > child
+      If you want to choose the direct child of the parent element.
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a {}
+
+
+    24. What is a pseudo selector?
+        A pseudo selector is used to define a special state of an element, like hover, visited
+
+
+    25. What do we use the change the spacing between lines?
+    set line-spacing: to a value you want. 
+
+    26. What do we use to change the spacing between letters?
+    set letter-spacing: to a value you want 
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+       text-transform:uppercase, or lowercase, or capitalize.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+         border: 1px dotted black;
+
+
+    29. How do I select everything on the page? 
+        * {}
+
+
+    30. How do I write a comment in CSS?
+      /*   */   (command + /)
+       
+    31. How do I find out what file I am in, when I am using the command line? 
+       pwd
+
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
+      
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+           rm fileName, because it cannot be recovered.
+
+    34. Why should I use version control? 
+             It is important to keep track of changes. 
+
+    35. How often should I commit to github?
+          always
+
+    36. What is the command we would use to push our repo up to github? 
+         git push -u origin branchName
+
+    37. Walk me through Lambda's git flow. 
+    fork the repo, get the link, go to your terminal, get in to the folder you want that project to be, 
+    get clone link, make a branch, work on the files, git add . , git commit -m "changes" , check git status
+    if you would like, git -push -u origin branchName, now to to git hub, request a pull, get that link, submit
+      it on Canvas. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Stretch :
+1. What is the difference between an inline element and a block element?
+Answer: Inline element only takes up as much width as needed, and it doesn't start on a new line.
+        Block element always takes up the full width available, and always starts on a new line.
+        A block element has a top and bottom margin, where as an inline element does not.
+
+
+
+
+2. What happens when an element is positioned absolutely? 
+Answer: it will be positioned relative to the first relatively or absolutely positioned parent element. 
+        If there is no positioned parent element, it will be positioned related directly to the page itself.
+
+
+
+
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it 
+   a width? 
+Answer: I think we can use flex-basis to give an element a width, but also use flex-grow, flex-shrink to create
+        flexible layouts so the element can fully adapt to the page it has. Not very clear if this is right :( 
+
+
+4. Name 3 elements that are display block by default, 2 elements that are display inline by default, and 1 
+   element that is display inline-block by default
+Answer: block elements: <div>, <ul>, <article>, <h1>;
+        inline elements: <a>, <img>;
+        inline-block elements: <button>?
+
+   
+5. In your own words, explain the box model. What is the fix for the box model? 
+Answer: Everything is CSS has a box around it. You can add padding and border to the box.  
+        This will change the size of the box. For example, if you set width and height to be 200px for 
+        two boxes, but one has padding 5px, and the other doesn't. Then they will look differently. 
+        Sometimes it will cause problems. The fix is using box-sizing:border-box. box-sizing:border-box 
+        include padding and borders in an element's width. With box-sizing:border-box, the two box I mentioned
+        above, will look the same in size. 
