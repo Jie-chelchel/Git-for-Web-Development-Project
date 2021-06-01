@@ -1,0 +1,39 @@
+Part 2, codepan link_Jie Zhang
+https://codepen.io/jie-chelchel/pen/abJEmOB?editors=1100
+
+1. What is the difference between an inline element and a block element?
+Answer: Inline element only takes up as much width as needed, and it doesn't start on a new line.
+        Block element always takes up the full width available, and always starts on a new line.
+        A block element has a top and bottom margin, where as an inline element does not.
+
+
+
+
+2. What happens when an element is positioned absolutely? 
+Answer: it willl be positioned relative to the first relatively or absolutely positioned parent element. 
+        If there is no positioned parent element, it will be positioned related directly to the page itself.
+
+
+
+
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it 
+   a width? 
+Answer: I think we can use flex-basis to give an element a width, but also use flex-grow, flex-shrink to create
+        flexible layouts so the element can fully adapt to the spage it has. Not very clear if this is right :( 
+
+
+4. Name 3 elements that are display block by default, 2 elements that are display inline by default, and 1 
+   element that is display inline-block by default
+Answer: block elements: <div>, <ul>, <article>, <h1>;
+        inline elements: <a>, <img>;
+        inline-block elements: <button>?
+
+   
+5. In your own words, explain the box model. What is the fix for the box model? 
+Answer: Everything is CSS has a box around it. You can add padding and border to the box.  
+        This will change the size of the box. For example, if you set width and height to be 200px for 
+        two boxes, but one has padding 5px, and the other doesn't. Then they will look differently. 
+        Sometimes it will cause problems. The fix is using box-sizing:border-box. box-sizing:border-box 
+        include padding and borders in an element's width. With box-sizing:border-box, the two box I mentioned
+        above, will look the same in size. 
